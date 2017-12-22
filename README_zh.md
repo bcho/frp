@@ -234,6 +234,7 @@ frps 的部署步骤同上。
 
   [secret_ssh]
   type = stcp
+  role = server
   # 只有 sk 一致的用户才能访问到此服务
   sk = abcdefg
   local_ip = 127.0.0.1
@@ -288,6 +289,7 @@ frp 提供了一种新的代理类型 **xtcp** 用于应对在希望传输大量
 
   [p2p_ssh]
   type = xtcp
+  role = server
   # 只有 sk 一致的用户才能访问到此服务
   sk = abcdefg
   local_ip = 127.0.0.1
